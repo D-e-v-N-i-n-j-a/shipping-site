@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Offiiss</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Poppins:wght@900&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <!-- Add Google Fonts Poppins -->
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/img/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <style>
+        .logo {
+            height: 35px;
+        }
+
+        .profile {
+            position: relative;
+        }
+
+        .avartor {
+            width: 65px;
+            height: 65px;
+            border-radius: 100%;
+            background-color: white;
+            display: flex;
+
+            align-items: center;
+            padding: 10px;
+        }
+
+        .profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+        }
+
+        .circular-div {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .banner-text {
+            padding-right: 80px;
+            margin: 50px 0px 0px;
+        }
+
+        .banner-text p {
+            margin: 40px 0px;
+        }
+
+        .banner-text ul {
+            list-style: none;
+        }
+
+        .banner-text ul li {
+            display: inline-block;
+            margin: 0px 10px 10px 0px;
+        }
+
+        .banner-text ul li a {
+            display: block;
+        }
+
+        .banner-text ul li a img {
+            width: 150px;
+            border-radius: 7px;
+        }
+
+        footer {
+
+            background-color: #0B2127;
+        }
+
+        .hr-custom {
+            flex-grow: 1;
+            border: none;
+            border-top: 1px solid #ccc;
+            /* Example color for the line */
+            margin: 0 20px;
+        }
+
+        .footer-icons a {
+            color: #555;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .logo_brand {
+               height: 120px;
+                /* Change to a single column layout */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
+        <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-1 px-lg-5">
+            <img src="./img/logo1.png" class="logo" alt="">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0 mx-3">
+                <a href="index.html" class="nav-item nav-link" onclick="changeActive(this)">Shippers</a>
+                <a href="./carriers.html" class="nav-item nav-link" onclick="changeActive(this)">Clearing Agents</a>
+                <a href="./resources.html" class="nav-item nav-link" onclick="changeActive(this)">Truck Drivers</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+
+    <!-- VIDEO Start -->
+    <section class="banner mt-5" data-scroll-index='0'>
+        <div class="banner-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <div class="banner-text">
+                            <h2 class="white display-4">Elevate Your</h2>
+                            <h2 class="white display-4">Logistics Game</h2>
+                            <h2 class="white display-4">with Offiiss App.</h2>
+                            <div class="container my-5">
+                                <div class="row">
+                                    <div class="d-flex profile">
+                                        <div class="avartor wow fadeInDown shadow">
+                                            <img  src="img/image3.JPG" alt="Profile 1" data-wow-delay="0.2s">
+                                        </div>
+                                        <div class="avartor wow bounce shadow">
+                                            <img  src="img/pic3.png" alt="Profile 1" data-wow-delay="0.4s">
+                                        </div>
+                                        <div class="avartor wow shadow fadeInDown">
+                                            <img  src="img/image2.JPG" alt="Profile 1" data-wow-delay="0.6s">
+                                        </div>
+                                        <div class="mx-5 row">
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Add more profile divs as needed -->
+                                </div>
+                            </div>
+
+                            <ul class="d-flex">
+                                <li><a href="#"><img src="img/appstore.png" class="wow fadeInUp"
+                                            data-wow-delay="0.4s" /></a></li>
+                                <li><a href="#"><img src="img/playstore.png" class="wow fadeInUp"
+                                            data-wow-delay="0.7s" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> <img src="img/mochup.png" class="img-fluid wow fadeInUp"
+                            data-wow-delay="0.7s" /> </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="col-md-8 mx-auto col-12 py-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 style="font-weight: 400; color:tomato; font-family: 'Fira Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Russo One', sans-serif; font-size: 34px;">
+                        Get All Ports Clearing Agents</h4>
+                    <p>
+                        Easiest and meaningful way to connect with clearing agents and freight-forwarders at Tema
+                        Seaport, Takoradi Seaport and
+                        Kotoka International Airport using your Offiiss app anytime.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="container text-center">
+                <div class="row">
+                    <!-- Repeat this div block for each card (3 times) -->
+                    <div class="col-md-4 mb-4 wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="card">
+                            <img src="./img/IMG_0476.PNG" alt="Image 1" />
+                            <div class="info">
+                                <h4 class="text-light">Reducing shippers’ costs</h4>
+                                <p class="text-left text-light">
+                                    We save shippers money through automation,flexible capacity,service quality and
+                                    better visibility
+                                </p>
+                                <!-- <div class="rounded arrowbtn">
+                                    <a href="#"><span>&#10132;</span></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeat this div block for the second card -->
+                    <div class="col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="card">
+                            <img src="./img/Truck-Driver- smile.jpg" alt="Image 1" />
+                            <div class="info">
+                                <h4 class="text-light">Improves carrier's Live</h4>
+                                <p class="text-light">
+                                    We are dedicated to helping carriers and drivers earn more with less hassle,keeping
+                                    their trucks full on the lane they like to run.
+                                </p>
+                                <!-- <div class="rounded arrowbtn">
+                                    <a href="#"><span>&#10132;</span></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat this div block for the third card -->
+
+                    <div class="col-md-4 mb-4 wow slideInRight" data-wow-delay="0.6s">
+                        <div class="card">
+                            <img src="./img/truck driver and a woman.webp" alt="Image 1" />
+                            <div class="info text-justify">
+                                <h4 class="text-light">Eliminate Carbon Waste</h4>
+                                <p class="text-light">
+                                    Together we’re creating a more responsible and sustainable supply chain and saving
+                                    the planet whil we do it
+                                </p>
+                                <!-- <div class="rounded arrowbtn">
+                                    <a href="#"><span>&#10132;</span></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- About End -->
+
+
+        <!-- CAROUSEL START -->
+        <div class="container-xxl py-5">
+            <div class="container py-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 style="font-weight: bold; color: tomato;   font-family: 'Poppins', sans-serif;
+              font-family: 'Russo One', sans-serif;" class="fs-3">
+                        Trusted by industry leaders</h4>
+
+
+                <div class="d-flex col-md-8 mx-auto my-5 justify-content-center">
+                    <div class="col-md-3 col-sm-4 my-2 text-center flex-sm-column">
+                        <img  src="./img/GTP.png" class="img-fluid" alt="Image 1" />
+                    </div>
+                
+                    <div class="col-md-3 col-sm-4 my-2 text-center flex-sm-column">
+                        <img  src="./img/GRA.jpeg" class="img-fluid" alt="Image 2" />
+                    </div>
+                
+                    <div class="col-md-3 col-sm-4 my-2 text-center flex-sm-column">
+                        <img src="./img/GSA.png" class="img-fluid" alt="Image 3" />
+                    </div>
+                </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Fact End -->
+
+
+        <!-- Service Start -->
+        <div class="container_grid">
+            <div class="cont1 d-flex align-items-center justify-content-center">
+                <div class="m-5">
+                    <h5 class="text-white">For shippers</h5>
+                    <h2 style="color:tomato;font-weight: bold;font-family: 'Fira Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Russo One', sans-serif;">Giving you Ascers to clearing agents and truck drivers with no hustle</h2>
+                    <span class="d-block text-light">Offiss provides unmatched flexibility with uncompromising quality,
+                        reducing
+                        shipping costs and helping you achieve your
+                        sustainability goals.</span>
+                </div>
+            </div>
+            <div class="cont2" style="background-image: url('./img/image2.JPG');"></div>
+            <div class="cont3"></div>
+            <div class="cont4 d-flex align-items-center justify-content-center">
+                <div class="mx-5">
+                    <h5 style="font-weight: bolder; color:#304850">For shippers</h5>
+                    <h2 style="color:tomato;font-weight: bold;font-family: 'Fira Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Russo One', sans-serif;">Earn more with less hassle</h2>
+                    <span class="d-block">Offiss drives your business forward by keeping your trucks full on the lanes
+                        you
+                        like to run.</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Service End -->
+        <section class="mt-5" data-scroll-index='2'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sectioner-header text-center">
+                            <h2>Why Choose Offiiss</h>
+                                <span class="line"></span>
+                        </div>
+                        <div class="section-content text-center">
+                            <div class="row border border-0">
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
+                                        <div class="media-right icon-border"><img src="img/frame1.png" alt=""> </div>
+                                        <div class="media-body text-left media-left-margin">
+                                            <h5>Seamless Logistics Connections</h5>
+                                            <p>
+                                                Offiiss is your one-stop destination where importers and
+                                                exporters effortlessly connect with trusted freight forwarders and
+                                                reliable truck/trailer drivers for
+                                                all their logistics needs. </p>
+                                        </div>
+                                    </div>
+                                    <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="media-right icon-border">
+                                            <img src="img/frame1.png" alt="">
+                                        </div>
+                                        <div class="media-body text-left media-left-margin">
+                                            <h5>Transparent Cost Efficiency</h5>
+                                            <p>
+                                                We offer complete transparency in service costs, ensuring that
+                                                importers/exporters always get the most cost-effective logistics
+                                                solutions. No hidden fees, no
+                                                surprises - just straightforward pricing.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="media-left icon-border media-right-margin"> <img
+                                                src="img/frame1.png" alt=""></div>
+                                        <div class="media-body text-left">
+                                            <h5>Real-Time Communication</h5>
+                                            <p>
+                                                Stay connected with your chosen service providers through
+                                                integrated call and text features. Need updates or have specific
+                                                instructions? Communication is
+                                                a breeze.</p>
+                                        </div>
+                                    </div>
+                                    <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="media-left icon-border media-right-margin"> <img
+                                                src="img/frame1.png" alt=""></div>
+                                        <div class="media-body text-left">
+                                            <h5>Performance Feedback</h5>
+                                            <p>
+                                                Rate and comment on service providers based on your experience,
+                                                promoting accountability and helping fellow users make informed choices
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4 d-none d-md-block d-lg-block">
+                                    <div class="feature-mobile"> <img src="img/mock.png"
+                                            class="img-fluid wow fadeInUp" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
+                                        <div class="media-left icon-border media-right-margin"> <img
+                                                src="img/frame1.png" alt=""> </div>
+
+                                        <div class="media-body text-left">
+                                            <h5>Exclusive Service Provider Partnerships</h5>
+                                            <p>
+                                                Offiiss collaborates closely with service providers to
+                                                secure exclusive, competitive rates for our users. This means you can
+                                                access premium logistics
+                                                services without breaking the bank
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="media-left icon-border media-right-margin"> <img
+                                                src="img/frame1.png" alt=""></div>
+                                        <div class="media-body text-left">
+                                            <h5>User-Friendly Booking</h5>
+                                            <p>
+                                                With our intuitive booking forms, you can reserve freight forwarders
+                                                and truck/trailer drivers in just a few clicks. Say goodbye to complex
+                                                logistics arrangements and
+                                                hello to simplicity. </p>
+                                        </div>
+                                    </div>
+                                    <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="media-left icon-border media-right-margin"> <img
+                                                src="img/frame1.png" alt=""></div>
+                                        <div class="media-body text-left">
+                                            <h5>Home-Based Convenience</h5>
+                                            <p>
+                                                Offiiss brings the logistics world to your doorstep. No more office
+                                                visits or endless calls - now you can book logistics services from the
+                                                comfort of your home. </p>
+                                        </div>
+                                    </div>
+                                    <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="media-left icon-border media-right-margin"> <img
+                                                src="img/frame1.png" alt=""></div>
+                                        <div class="media-body text-left">
+                                            <h5>User-Friendly Booking</h5>
+                                            <p>
+                                                With our intuitive booking forms, you can reserve freight forwarders
+                                                and truck/trailer drivers in just a few clicks. Say goodbye to complex
+                                                logistics arrangements and
+                                                hello to simplicity. </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+
+        <!-- Feature Start -->
+        <!-- CAROUSEL START -->
+        <div class="container-xxl pt-5">
+            <div class="container py-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 style="font-weight: bold; color: black;   font-family: 'Poppins', sans-serif;
+  font-family: 'Russo One', sans-serif;" class="fs-3">
+                        Preferred by carriers and drivers</h4>
+
+                    <!-- ANIMATION START HERE -->
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade mt-1 mb-1"
+                        data-bs-ride="carousel">
+                        <div class="carousel-inner mb-3 my-5">
+                            <div class="carousel-item active">
+                                <div class="row justify-content-center align-items-start">
+                                    <div class="col-md-2">
+                                        <!-- Add your logo image here -->
+                                        <img src="img/pic1.png" class="img-fluid rounded-circle" alt="Avatar">
+                                    </div>
+                                    <div class="col-md-8" style="text-align: justify;">
+                                        <p style="font-weight: 400;">
+                                            "I have been using Offiiss Marketplace App for several months now, and it
+                                            has been a game-changer for my import business.
+                                            The platform makes it incredibly easy to find clearing agents and trailer
+                                            drivers to hire for our shipments. The user
+                                            interface is user-friendly, and I can quickly filter and sort through
+                                            listings to find the right service provider for my
+                                            needs. Overall, Offiiss Marketplace App has saved me time and money while
+                                            ensuring that my shipments arrive on time and
+                                            in good condition"
+                                        </p>
+
+                                        <h6 style="font-weight: 400;" class="mt-4">J. Asamoah, London</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item ">
+                                <div class="row justify-content-center align-items-start">
+                                    <div class="col-md-2">
+                                        <!-- Add your logo image here -->
+                                        <img src="img/pic2.png" class="img-fluid rounded-circle" alt="Avatar">
+                                    </div>
+                                    <div class="col-md-8" style="text-align: justify;">
+                                        <p style="font-weight: 400;">
+                                            "With the review feature it’s easy to find a reliable and competent agents
+                                            based on the comments of previous clients. I
+                                            will recommend Offiiss app for importers and exporters "
+                                        </p>
+
+                                        <h6 style="font-weight: 400;" class="mt-4">D. Quainoo, USA</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row justify-content-center align-items-start">
+                                    <div class="col-md-2">
+                                        <!-- Add your logo image here -->
+                                        <img src="img/pic3.png" class="img-fluid rounded-circle" alt="Avatar">
+                                    </div>
+                                    <div class="col-md-8" style="text-align: justify;">
+                                        <p style="font-weight: 400;">
+                                            "Offiiss Marketplace App has been a lifesaver for my business. As an
+                                            importer, I often struggle to find reliable clearing
+                                            agents and trailer drivers who can handle my shipments. However, since I
+                                            started using Offiiss Marketplace App, that
+                                            hasn't been an issue. The platform has a wide selection of service providers
+                                            to choose from, and the reviews and ratings
+                                            help me feel confident that I'm hiring the right person for the job. The
+                                            process is straightforward, and I appreciate
+                                            the convenience and peace of mind that Offiiss Marketplace App provides"
+                                        </p>
+
+                                        <h6 style="font-weight: 400;" class="mt-4">R. Boakye, Ghana</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row justify-content-center align-items-start">
+                                    <div class="col-md-2">
+                                        <!-- Add your logo image here -->
+                                        <img src="img/pic4.png" class="img-fluid rounded-circle" alt="Avatar">
+                                    </div>
+                                    <div class="col-md-8" style="text-align: justify;">
+                                        <p style="font-weight: 400;">
+                                            "I was hesitant to try Offiiss Marketplace App at first, but I'm glad I did.
+                                            The platform made it easy for me to find a
+                                            reliable clearing agent and no more running around looking for trailer
+                                            driver for my shipment, which was a huge relief.
+                                            The communication between the service provider and myself was seamless, and
+                                            I was kept updated on the status of my
+                                            shipment throughout the process. I highly recommend Offiiss Marketplace App
+                                            to anyone who needs to hire clearing agents
+                                            or trailer drivers"
+                                        </p>
+
+                                        <h6 style="font-weight: 400;" class="mt-4">F. Amponsah, Dubai</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev shadow" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class=" shadow" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- BUTTON HERE -->
+
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Feature End -->
+
+
+
+
+
+        <div class="container_info py-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h2
+                            style="font-family: 'Fira Sans', sans-serif; font-family: 'Poppins', sans-serif; font-family: 'Russo One', sans-serif; color:white;">
+                            Total Carbon Emissions Saved</h2>
+                        <div class="px-2 col-md-8 mx-auto" style="background-color: tomato;">
+                            <h2 class="display-1 my-5"
+                                style="font-family: 'Poppins', sans-serif; font-family: 'Russo One', sans-serif;color:white;">
+                                10,158,052 <small class="fs-3">lbs</small></h2>
+                        </div>
+                        <p style="font-family: 'Poppins', sans-serif; font-family: 'Russo One', sans-serif;color:white"
+                            class="fs-1 my-3">#NoEmptyMiles</p>
+                    </div>
+                    <div class="col-md-6 offset-md-3">
+                        <p style="color:white">Join shippers and carriers committed to eliminating carbon waste from
+                            empty
+                            miles. Together we're helping the industry ship responsibly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-secondary btn-lg my-3"><small>Learn more</small></button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Quote Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <h6 class="text-secondary text-uppercase mb-3">Contact</h6>
+                        <h1 class="mb-5">Get in touch</h1>
+                        <p class="mb-5">
+                            Fill in your details and inquiry below, and our team will promptly assist you. Your smooth
+                            logistics experience begins
+                            here.
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
+                            <div class="ps-4">
+                                <h6>Call for any query!</h6>
+                                <h3 class="text-primary m-0">+1 604-618-3396</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="bg-light text-center p-5 wow fadeIn" data-wow-delay="0.5s">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-12 col-sm-6">
+                                        <input type="text" class="form-control border-0" placeholder="Name"
+                                            style="height: 55px;">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <input type="email" class="form-control border-0" placeholder="Email"
+                                            style="height: 55px;">
+                                    </div>
+                                    <div class="col-12 col-sm-12">
+                                        <input type="text" class="form-control border-0" placeholder="Mobile"
+                                            style="height: 55px;">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <textarea class="form-control border-0"
+                                            placeholder="Write message here"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Quote End -->
+
+        <footer>
+            <div class="container p-5">
+                <div class="d-flex align-items-center justify-content-between">
+                    <img src="img/logo1.png" class="img-fluid logo" alt="">
+                    <hr class="hr-custom">
+                    <div class="footer-icons">
+                        <a href="#apple-store"><i class="fab fa-apple"></i></a>
+                        <a href="#play-store"><i class="fab fa-google-play"></i></a>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">About Us</a></li>
+                        <li class="list-inline-item"><a href="#">Services</a></li>
+                        <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                        <li class="list-inline-item"><a href="./read.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="#"><i class="fab fa-facebook-f fs-4 mx-2"></i></a>
+                    <a href="#"><i class="fab fa-twitter fs-4 mx-2"></i></a>
+                    <a href="#"><i class="fab fa-instagram fs-4 mx-2"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in fs-4 mx-2"></i></a>
+                </div>
+                <!-- Contact Information -->
+            <div class="text-center mt-4">
+                <p>Email: <a href="mailto:Support@offiiss.com">Support@offiiss.com</a></p>
+                <p>Phone: US, Can <a href="tel:+16046183396">+1 604-618-3396</a> / Ghana: <a href="tel:+233572012642">+233
+                        572-012-642</a></p>
+            </div>
+            <hr>
+            <div class="text-center mt-4">
+                <small>Offiiss is licensed by GPHA to operate business in all ports.</small>
+            </div>
+
+            </div>
+        </footer>
+        <!-- End of .container -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg-square rounded-0 back-to-top"><i class="fas fa-chevron-up"></i></a>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+</body>
+
+</html>

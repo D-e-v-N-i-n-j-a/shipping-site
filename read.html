@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offiss</title>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Add Google Fonts Poppins -->
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/img/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <style>
+        .logo {
+            height: 40px;
+        }
+
+        footer {
+
+            background-color: #0B2127;
+        }
+
+        .hr-custom {
+            flex-grow: 1;
+            border: none;
+            border-top: 1px solid #ccc;
+            /* Example color for the line */
+            margin: 0 20px;
+        }
+
+        .footer-icons a {
+            color: #555;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner End -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
+    <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-1 px-lg-5">
+        <img src="./img/logo1.png" class="logo" alt="">
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0 mx-3">
+            <a href="index.html" class="nav-item nav-link" onclick="changeActive(this)">Shippers</a>
+            <a href="./carriers.html" class="nav-item nav-link" onclick="changeActive(this)">Clearing Agents</a>
+            <a href="./resources.html" class="nav-item nav-link" onclick="changeActive(this)">Truck Drivers</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Navbar End -->
+
+
+    <div class="container my-5">
+        <h2 class="text-center">Saftey tips and security</h2>
+
+        <h6>Identity Verification</h6>
+        <p class="my-2">
+            Our agents visit clearing agents at their offices and verify the identity of the clearing agent and
+            transporter to
+            ensure that they are who they claim to be. We do this by requesting government-issued identification
+            documents such as
+            Ghana Cards, GPHA Access Card, Agency Card. Drivers Licences, Insurance etc.
+        </p>
+        <h6>Business Registration</h6>
+        <p class="my-2">
+            The Clearing Agent and Transporter should be registered as legal entities with the relevant government
+            authorities.
+            Offiiss registration agents verify this by requesting the registration certificate or other relevant
+            documents.
+        </p>
+
+        <h6>References and Reviews Feature</h6>
+        <p class="my-2">
+            As marketplace app we encourage importers to use references from the clearing agent and transporter's
+            previous clients
+            and check their reviews on the app to verify their reliability and credibility.
+        </p>
+
+        <h6>Insurance and Licenses</h6>
+        <p class="my-2">
+            The clearing agent and particularly transporter should possess the necessary insurance and licenses required by law to
+            provide their services. Offiiss verifies this by requesting proof of insurance and licenses.
+        </p>
+
+        <h6>Payment</h6>
+        <p class="my-2">
+            We urge importers to visit agents at their locations or offices for physical meet up before transaction and payment can
+            be done. We take no liability for any payment. Never give in for any manipulation and coercion to make any payment
+            without any due diligence on the part of users or importer
+                </p>
+    </div>
+
+
+
+    <footer>
+        <div class="container p-5">
+            <div class="d-flex align-items-center justify-content-between">
+                <img src="img/logo1.png" class="img-fluid logo" alt="">
+                <hr class="hr-custom">
+                <div class="footer-icons">
+                    <a href="#apple-store"><i class="fab fa-apple"></i></a>
+                    <a href="#play-store"><i class="fab fa-google-play"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">About Us</a></li>
+                    <li class="list-inline-item"><a href="#">Services</a></li>
+                    <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#"><i class="fab fa-facebook-f fs-4 mx-2"></i></a>
+                <a href="#"><i class="fab fa-twitter fs-4 mx-2"></i></a>
+                <a href="#"><i class="fab fa-instagram fs-4 mx-2"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in fs-4 mx-2"></i></a>
+            </div>
+            <!-- Contact Information -->
+    <div class="text-center mt-4">
+        <p>Email: <a href="mailto:Support@offiiss.com">Support@offiiss.com</a></p>
+        <p>Phone: US, Can <a href="tel:+16046183396">+1 604-618-3396</a> / Ghana: <a href="tel:+233572012642">+233
+                572-012-642</a></p>
+    </div>
+<hr>
+<div class="text-center mt-4">
+    <small>Offiiss is licensed by GPHA to operate business in all ports.</small>
+</div>
+        </div>
+    </footer>
+    <!-- End of .container -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg-square rounded-0 back-to-top"><i class="fas fa-chevron-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
