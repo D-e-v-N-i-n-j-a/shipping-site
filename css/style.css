@@ -378,6 +378,12 @@ a{
   text-align: center;
 }
 
+.edit_image{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
 .btn-icon::before {
   content: "\25B6";
   /* Unicode character for a play icon (right-pointing triangle) */
