@@ -50,6 +50,13 @@ a{
   border: 1px solid #002B5B;
 }
 
+.custom-border {
+    border-color: #002B5B !important;
+  }
+
+  .bg-success{
+    background: #002B5B !important;
+  }
 .btn.btn-primary:hover{
   background-color: #002B5B !important;
   color: white !important;
