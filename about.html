@@ -1,11 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clone Website</title>
+<meta content="" name="keywords">
+<meta content="" name="description">
+
+<!-- Favicon -->
+<link href="img/favicon.ico" rel="icon">
+
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Poppins:wght@900&family=Russo+One&display=swap"
+    rel="stylesheet">
+<!-- Add Google Fonts Poppins -->
+<!-- Icon Font Stylesheet -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Libraries Stylesheet -->
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Template Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+
+<style>
+    .logo {
+        height: 40px;
+    }
+
+    .arrow-link {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #002B5B;
+        text-align: center;
+        line-height: 30px;
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .arrow-link i {
+        color: #002B5B;
+    }
+
+    .arrow-link:hover {
+        background-color: #002B5B;
+        color: white
+    }
+
+    .arrow-link:hover i {
+        color: white;
+        /* Change icon color on hover */
+    }
+
+    footer {
+        background-color: #F5F5F5;
+    }
+
+    .hr-custom {
+        flex-grow: 1;
+        border: none;
+        border-top: 1px solid #ccc;
+        /* Example color for the line */
+        margin: 0 20px;
+    }
+
+    .support {
+
+        color: #002B5B;
+    }
+
+</style>
 </head>
+
+
 <body>
+<!-- Spinner Start -->
+<div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<!-- Spinner End -->
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 custom-border sticky-top p-0">
+    <a href="index.html" class="navbar-brand bg-success d-flex align-items-center px-1 px-lg-5">
+        <img src="./img/logo1.png" class="logo" alt="">
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0 mx-3">
+            <a href="index.html" class="nav-item nav-link" onclick="changeActive(this)">Shippers</a>
+            <a href="./carriers.html" class="nav-item nav-link" onclick="changeActive(this)">Clearing Agents</a>
+            <a href="./resources.html" class="nav-item nav-link" onclick="changeActive(this)">Truck Drivers</a>
+            <a href="./about.html" class="nav-item nav-link" onclick="changeActive(this)">About Us</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Navbar End -->
+<div class="background-image-container">
+    <!-- Replace the URL with the path to your background image -->
+    <div class="background-image"
+        style="background-image: url('./img/kendall-henderson-Pj6TgpS_Vt4-unsplash.jpg'); height: 80vh;">
+        <div class="overlay"></div>
+    </div>
+    <div class="text">
+        <h2 class="fs-1 mx-2 text-center">ABOUT US PAGE</h2>
+    </div>
+</div>
+
+<div class="container-xxl">
+    <div class="container py-5">
+        <div class="col-md-8 text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+            <h4 style="font-weight: 400; color:#002B5B; font-family: 'Fira Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Russo One', sans-serif; font-size: 34px;">
+            In 2015, Convoy started a movement toward efficient freight</h4>
+            <p>
+            We build technology to find smarter ways to connect shippers with carriers while solving some of the toughest problems
+            that result in waste in the freight industry.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container-xxl my-5">
+    <div class="container py-5">
+        <div class="col-md-8 text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+            <h4 style="font-weight: 400; color:#002B5B; font-family: 'Fira Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Russo One', sans-serif; font-size: 34px;">
+            Solving the fundamental problems of freight</h4>
+            <p>
+                Convoy is the nation’s leading digital freight network. We move millions of truckloads around the country through our
+                connected network of carriers, saving money for shippers, increasing earnings for drivers, and eliminating carbon waste
+                for our planet.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div class="container_grid">
     
+    <div class="cont1 p-5" style="background-color: white;">
+       
+        <h1 class="fs-1 mx-2 fw-bold">We are defined by our values</h1>
+        <p>
+            Our 12 company values form the foundation of who we are, what we believe, and how we approach our work. They are a
+            critical presence in every interaction and every action we take at Convoy. We share our values with our customers and
+            partners because they say as much about Convoy as our products and services do.
+        </p>
+        <button type="button" class="btn btn-secondary btn-lg my-3"><small>See All convoy Values</small></button>
+
+    </div>
+    <div class="cont2" style="background: url('./img/annie-spratt-sggw4-qDD54-unsplash.jpg'); background-repeat: no-repeat;background-size: cover;">
+    </div>
+    <div style="background-image: url('./img/IMG_0454.PNG');" class="cont3"></div>
+    <div class="cont4 d-flex align-items-center justify-content-center">
+        <div class="mx-5">
+           
+            <h2 style="color:#002B5B;font-weight: bold;font-family: 'Fira Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Russo One', sans-serif;">Join our team and help bring freight into the future</h2>
+            <span class="d-block">
+                We move fast and we challenge each other, but we look after each other and care about our culture, which makes working
+                here extremely rewarding. There’s a lot of work left for us to do, and we couldn’t do it without a single member of our
+                team.
+            </span>
+            <a href="./read.html" class="btn btn-secondary btn-lg my-3"><small>Learn more</small> </a>
+        </div>
+    </div>
+
+
+    
+    <div class="cont4 d-flex align-items-center justify-content-center">
+        <div class="mx-5">
+    
+            <h2 style="color:#002B5B;font-weight: bold;font-family: 'Fira Sans', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Russo One', sans-serif;">Leadership</h2>
+            <span class="d-block">
+            Our experienced and passionate leaders are dedicated to making Convoy a great place to work. They love working with
+            customers and with the Convoy team. They’re supported by an engaged board of directors.
+            </span>
+            <a href="#" class="btn btn-secondary btn-lg my-3"><small>Meet out Leadership</small> </a>
+        </div>
+    </div>
+    <div style="background-image: url('./img/campaign-creators-gMsnXqILjp4-unsplash.jpg');" class="cont3"></div>
+</div>
+
+
+<div class="my-5 text-center">
+<h2 style="color:#002B5B;font-weight: bold;font-family: 'Fira Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Russo One', sans-serif;">Meet the team</h2>
+</div>
+
+
+<a href="#" class="btn btn-lg-square rounded-0 back-to-top"><i class="fas fa-chevron-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
 </body>
 </html>
